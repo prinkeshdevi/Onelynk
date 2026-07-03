@@ -6,7 +6,7 @@ import { Services } from './components/Services';
 import { Demo } from './components/Demo';
 import { WhyChooseUs } from './components/WhyChooseUs';
 import { Footer } from './components/Footer';
-import logo from '../assets/logo.png';
+import logo from './assets/logo.png';
 
 export default function App() {
   return (

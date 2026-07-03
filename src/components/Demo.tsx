@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { useState } from 'react';
 import { ChevronDown, ArrowRight, User, Briefcase, Star, Phone, Mail, Globe, Grid, Layers, Play, Clock, QrCode, Download, Share2, Instagram, MessageCircle } from 'lucide-react';
-import logoImg from '../../assets/logo.png';
+import logoImg from '../assets/logo.png';
 
 const styles = [
   'Simple',
