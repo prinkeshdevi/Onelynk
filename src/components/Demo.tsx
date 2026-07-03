@@ -761,25 +761,42 @@ END:VCARD`;
         {/* Mockup Container */}
         <div className="flex justify-center mb-24 relative">
           <motion.div 
-            className="w-[320px] aspect-[9/19] bg-white rounded-[3.5rem] p-3 shadow-2xl border border-white/10 relative z-10"
+            className="w-[320px] aspect-[9/19] bg-[#1a1a1a] rounded-[3.5rem] p-3 shadow-2xl border border-neutral-800 relative z-10"
             initial={{ y: 0 }}
             animate={{ y: [-10, 10, -10] }}
             transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
-            style={{ boxShadow: '0 40px 80px rgba(0,0,0,0.5), inset 0 2px 4px rgba(255,255,255,0.1)' }}
+            style={{ boxShadow: '0 40px 80px rgba(0,0,0,0.5), inset 0 2px 4px rgba(255,255,255,0.05)' }}
           >
             {/* Screen */}
             <div className="w-full h-full bg-white rounded-[2.75rem] overflow-hidden relative flex flex-col isolate shadow-inner">
-               {/* Notch */}
-               <div className="absolute top-0 inset-x-0 h-7 flex justify-center z-50">
-                  <div className="w-32 h-6 bg-white rounded-b-[1rem]"></div>
+               {/* Dynamic Island / Notch */}
+               <div className="absolute top-0 inset-x-0 h-8 flex justify-center items-center z-50">
+                  <div className="w-28 h-7 bg-[#0A0A0A] rounded-full flex items-center justify-center">
+                    <div className="w-2 h-2 bg-neutral-700 rounded-full mr-2"></div>
+                    <div className="w-3 h-3 bg-neutral-800 rounded-full"></div>
+                  </div>
+               </div>
+               
+               {/* Status Bar */}
+               <div className="h-8 shrink-0 bg-white flex items-end justify-between px-6 pb-1 text-[10px] font-medium text-neutral-800">
+                  <span>9:41</span>
+                  <div className="flex items-center gap-1">
+                     <div className="flex gap-[2px]">
+                        <div className="w-[2px] h-[5px] bg-neutral-800 rounded-sm"></div>
+                        <div className="w-[2px] h-[7px] bg-neutral-800 rounded-sm"></div>
+                        <div className="w-[2px] h-[9px] bg-neutral-800 rounded-sm"></div>
+                        <div className="w-[2px] h-[11px] bg-neutral-800 rounded-sm"></div>
+                     </div>
+                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.18L12 21z"/></svg>
+                  </div>
                </div>
                
                {renderContent()}
             </div>
             
             {/* Phone Reflections */}
-            <div className="absolute inset-0 rounded-[3.5rem] border border-white/20 pointer-events-none"></div>
-            <div className="absolute top-0 left-6 right-6 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent pointer-events-none"></div>
+            <div className="absolute inset-0 rounded-[3.5rem] border border-white/10 pointer-events-none"></div>
+            <div className="absolute top-0 left-6 right-6 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent pointer-events-none"></div>
           </motion.div>
           
           {/* Ambient light behind phone */}
