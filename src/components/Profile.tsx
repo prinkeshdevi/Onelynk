@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Phone, MessageCircle, Mail, Share2, X, Copy, Check, Instagram, Download } from 'lucide-react';
 import { useState } from 'react';
 import { QRCodeSVG } from 'qrcode.react';
-import logo from '../assets/logo.png';
+import logo from 'public/assets/logo.png';
 
 const actions = [
   { id: 'call', icon: Phone, label: 'Call', href: 'tel:7385010471' },
