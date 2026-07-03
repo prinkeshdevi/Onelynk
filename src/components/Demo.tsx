@@ -21,7 +21,7 @@ const brandInfo = {
   tagline: 'CONNECT • GROW • SUCCEED.',
   founder: 'Prinkesh Devi',
   role: 'Founder & Digital Identity Designer',
-  logo: logoImg,
+  logo: logoImg, href='public/assets/logo.png'
   hours: 'Mon – Sat | 10:00 AM – 7:00 PM',
   about: "OneLynk crafts premium digital identities that help professionals and businesses create unforgettable first impressions. Unlike generic digital cards, every OneLynk experience is custom-designed. We don't sell templates. We design digital experiences.",
   services: [
