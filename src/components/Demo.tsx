@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { useState } from 'react';
 import { ChevronDown, ArrowRight, User, Briefcase, Star, Phone, Mail, Globe, Grid, Layers, Play, Clock, QrCode, Download, Share2, Instagram, MessageCircle } from 'lucide-react';
+import logoImg from '../../assets/logo.png';
 
 const styles = [
   'Simple',
@@ -20,7 +21,7 @@ const brandInfo = {
   tagline: 'CONNECT • GROW • SUCCEED.',
   founder: 'Prinkesh Devi',
   role: 'Founder & Digital Identity Designer',
-  logo: '/assets/logo.png',
+  logo: logoImg,
   hours: 'Mon – Sat | 10:00 AM – 7:00 PM',
   about: "OneLynk crafts premium digital identities that help professionals and businesses create unforgettable first impressions. Unlike generic digital cards, every OneLynk experience is custom-designed. We don't sell templates. We design digital experiences.",
   services: [
