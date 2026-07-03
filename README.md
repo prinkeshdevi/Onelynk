@@ -21,11 +21,11 @@ Building premium digital experiences for modern businesses.
 
 # 🚀 About Me
 
-I'm **Prinkesh Devi**, a passionate **Vibe Coding**, **UI/UX Designer**, and **Entrepreneur** from India.
+I'm **Prinkesh Devi**, a passionate **Vibe Coder**, **UI/UX Designer**, and **Entrepreneur** from India.
 
 I'm the founder of **OneLynk**, a premium digital solutions company dedicated to helping businesses establish a strong online presence through technology, design, and innovation.
 
-I love transforming ideas into modern, fast, and visually stunning digital products that make businesses stand out.
+I love transforming ideas into modern, fast, and visually stunning digital products that help businesses stand out.
 
 ---
 
@@ -66,7 +66,7 @@ Currently developing:
 ### Languages
 
 <p>
-<img src="https://skillicons.dev/icons?i=js,ts,html,css" />
+<img src="https://skillicons.dev/icons?i=html,css,js,ts" />
 </p>
 
 ### Frontend
@@ -122,7 +122,7 @@ Currently developing:
 
 > **Technology isn't just about writing code.**
 >
-> It's about solving real-world problems, creating memorable experiences, and helping businesses grow.
+> **It's about solving real-world problems, creating memorable experiences, and helping businesses grow.**
 
 At **OneLynk**, our mission is simple:
 
@@ -158,9 +158,9 @@ At **OneLynk**, our mission is simple:
 
 <br><br>
 
-<img src="https://onelynk.github.io/onelynk-assets/OnelynkLogo.png" width="120"/>
+<img src="https://onelynk.github.io/onelynk-assets/OnelynkLogo.png" width="120" alt="OneLynk Logo"/>
 
-### OneLynk
+## OneLynk
 
 ### CONNECT • GROW • SUCCEED.
 
