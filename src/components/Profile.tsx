@@ -15,12 +15,26 @@ const actions = [
 export function Profile() {
   const [showShare, setShowShare] = useState(false);
   const [copied, setCopied] = useState(false);
-  const profileUrl = "https://onelynk.com/prinkesh";
+  const profileUrl = typeof window !== 'undefined' ? window.location.href : "https://onelynk.com/prinkesh";
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText(profileUrl);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(profileUrl);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      // Fallback for older browsers
+      const textArea = document.createElement('textarea');
+      textArea.value = profileUrl;
+      textArea.style.position = 'fixed';
+      textArea.style.left = '-999999px';
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
   };
 
   const handleSaveContact = () => {
@@ -161,6 +175,8 @@ END:VCARD`;
               <div className="bg-white p-4 rounded-2xl border-2 border-neutral-100 shadow-sm inline-block mb-8">
                 <QRCodeSVG value={profileUrl} size={180} level="H" includeMargin={false} />
               </div>
+              
+              <p className="text-xs text-[#64748B] mb-4">or copy link below</p>
               
               <div className="flex items-center gap-2 p-2 bg-[#F8FAFC] rounded-2xl border border-neutral-100">
                 <div className="flex-1 truncate px-3 text-sm text-[#64748B] text-left select-all">
