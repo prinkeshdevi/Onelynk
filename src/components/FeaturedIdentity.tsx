@@ -4,7 +4,7 @@ import {
   Info, Briefcase, ShoppingBag, FolderOpen, Image, Video, MessageSquare, 
   Star, Download, CreditCard, Link as LinkIcon, Clock, MapPin, Phone 
 } from 'lucide-react';
-import logo from '../assets/logo.png';
+import logo from 'public/assets/logo.png';
 
 const tabs = [
   { id: 'about', label: 'About', icon: Info, content: 'We are a premium digital identity design studio specializing in bespoke digital business cards and mini-websites.' },
