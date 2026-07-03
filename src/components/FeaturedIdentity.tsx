@@ -55,8 +55,8 @@ export function FeaturedIdentity() {
             {/* Content Area */}
             <div className="flex-1 overflow-y-auto no-scrollbar pt-12 pb-8 px-6 bg-[#F8FAFC]">
               <div className="flex flex-col items-center text-center mb-8">
-                 <div className="w-20 h-20 rounded-2xl bg-white shadow-sm border border-neutral-100 flex items-center justify-center mb-4 p-2 overflow-hidden">
-                    <img src={logo} alt="OneLynk Logo" className="w-full h-full object-cover" />
+                 <div className="w-20 h-20 rounded-2xl bg-neutral-900 shadow-sm border border-neutral-100 flex items-center justify-center mb-4 p-2 overflow-hidden">
+                    <img src={logo} alt="OneLynk Logo" className="w-full h-full object-contain" />
                  </div>
                  <h3 className="font-bold text-xl text-[#0A0A0A] mb-1">OneLynk Studio</h3>
                  <p className="text-sm text-[#64748B]">Premium Digital Identities</p>

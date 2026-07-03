@@ -13,8 +13,8 @@ export default function App() {
     <div className="min-h-screen bg-white text-[#0A0A0A] font-sans selection:bg-[#2563EB] selection:text-white overflow-x-hidden">
       <header className="absolute top-0 inset-x-0 p-8 flex justify-between items-center z-50 max-w-[1024px] mx-auto">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl overflow-hidden flex items-center justify-center shadow-lg shadow-blue-500/20 bg-white">
-             <img src={logo} alt="OneLynk Logo" className="w-full h-full object-cover" />
+          <div className="w-10 h-10 rounded-xl overflow-hidden flex items-center justify-center shadow-lg shadow-blue-500/20 bg-neutral-900">
+             <img src={logo} alt="OneLynk Logo" className="w-full h-full object-contain" />
           </div>
           <div>
             <h1 className="text-xl font-bold tracking-tight uppercase leading-none">OneLynk</h1>

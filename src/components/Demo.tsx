@@ -135,7 +135,7 @@ END:VCARD`;
             exit={{ opacity: 0 }}
             className="flex-1 bg-[#F8FAFC] flex flex-col items-center pt-20 px-6 overflow-y-auto no-scrollbar"
           >
-            <div className="w-24 h-24 rounded-2xl bg-white mb-4 overflow-hidden border-2 border-white shadow-sm flex items-center justify-center p-2">
+            <div className="w-24 h-24 rounded-2xl bg-[#0A0A0A] mb-4 overflow-hidden border-2 border-white shadow-sm flex items-center justify-center p-2">
               <img src={brandInfo.logo} className="w-full h-full object-contain" alt="Logo" />
             </div>
             <h3 className="text-xl font-bold text-[#0A0A0A] mb-1">{brandInfo.founder}</h3>
@@ -185,7 +185,7 @@ END:VCARD`;
                 className="absolute inset-0 bg-white rounded-3xl p-6 shadow-xl border border-neutral-100 flex flex-col items-center justify-center text-center"
                 style={{ backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden" }}
               >
-                <div className="w-20 h-20 bg-neutral-50 rounded-2xl mb-4 flex items-center justify-center p-2 shadow-sm border border-neutral-100">
+                <div className="w-20 h-20 bg-[#0A0A0A] rounded-2xl mb-4 flex items-center justify-center p-2 shadow-sm border border-neutral-100">
                   <img src={brandInfo.logo} className="w-full h-full object-contain" alt="Logo" />
                 </div>
                 <h3 className="text-xl font-bold text-[#0A0A0A] mb-1">{brandInfo.founder}</h3>
@@ -235,7 +235,7 @@ END:VCARD`;
             className="flex-1 bg-[#F8FAFC] flex flex-col relative"
           >
             <div className="flex-1 p-6 pt-16 flex flex-col items-center pb-32">
-              <div className="w-24 h-24 rounded-2xl bg-white mb-4 shadow-sm border border-neutral-100 flex items-center justify-center p-3 relative z-10">
+              <div className="w-24 h-24 rounded-2xl bg-[#0A0A0A] mb-4 shadow-sm border border-neutral-100 flex items-center justify-center p-3 relative z-10">
                 <img src={brandInfo.logo} className="w-full h-full object-contain" alt="Logo" />
               </div>
               <h3 className="text-xl font-bold text-[#0A0A0A]">{brandInfo.founder}</h3>
@@ -299,7 +299,7 @@ END:VCARD`;
             className="flex-1 bg-[#F8FAFC] p-6 pt-12 overflow-y-auto no-scrollbar"
           >
             <div className="flex items-center gap-4 mb-6 bg-white p-4 rounded-2xl shadow-sm border border-neutral-100">
-              <div className="w-14 h-14 bg-neutral-50 rounded-xl p-2 border border-neutral-100 shrink-0">
+              <div className="w-14 h-14 bg-[#0A0A0A] rounded-xl p-2 border border-neutral-100 shrink-0">
                 <img src={brandInfo.logo} className="w-full h-full object-contain" alt="Logo" />
               </div>
               <div>
@@ -445,7 +445,7 @@ END:VCARD`;
             <div className="flex-1 relative bg-gradient-to-br from-[#0A0A0A] to-[#1a1a1a] flex flex-col items-center justify-center p-6 text-center">
                {storyIndex === 0 && (
                   <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="flex flex-col items-center">
-                     <div className="w-20 h-20 bg-white rounded-2xl p-3 mb-6">
+                     <div className="w-20 h-20 bg-[#0A0A0A] rounded-2xl p-3 mb-6">
                         <img src={brandInfo.logo} className="w-full h-full object-contain" alt="Logo" />
                      </div>
                      <h2 className="text-2xl font-bold text-white mb-2">Welcome to<br/>{brandInfo.name}</h2>
@@ -521,7 +521,7 @@ END:VCARD`;
                 >
                   {activePhoneTab === 0 && (
                      <div className="flex flex-col items-center text-center">
-                        <div className="w-16 h-16 bg-neutral-50 rounded-xl border border-neutral-100 p-2 mb-4">
+                        <div className="w-16 h-16 bg-[#0A0A0A] rounded-xl border border-neutral-100 p-2 mb-4">
                            <img src={brandInfo.logo} className="w-full h-full object-contain" alt="Logo" />
                         </div>
                         <h3 className="font-bold text-lg text-[#0A0A0A]">{brandInfo.name}</h3>
@@ -575,7 +575,7 @@ END:VCARD`;
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="flex-1 relative bg-neutral-900 flex flex-col items-center justify-center p-6 overflow-hidden"
+            className="flex-1 relative bg-white flex flex-col items-center justify-center p-6 overflow-hidden"
           >
             <div className="absolute top-0 right-0 w-48 h-48 bg-[#2563EB] rounded-full blur-[60px] opacity-40"></div>
             <div className="absolute bottom-10 left-0 w-48 h-48 bg-purple-600 rounded-full blur-[60px] opacity-30"></div>
@@ -584,8 +584,8 @@ END:VCARD`;
                className="w-full bg-white/10 backdrop-blur-xl border border-white/20 rounded-[32px] p-6 text-white shadow-[0_20px_40px_rgba(0,0,0,0.4)] relative z-10 flex flex-col items-center"
                whileHover={{ y: -5 }}
             >
-              <div className="w-20 h-20 rounded-2xl bg-white/20 border border-white/30 mb-4 p-3 backdrop-blur-md shadow-inner">
-                 <img src={brandInfo.logo} className="w-full h-full object-contain filter brightness-0 invert" alt="Logo" />
+              <div className="w-20 h-20 rounded-2xl bg-[#0A0A0A]/20 border border-white/30 mb-4 p-3 backdrop-blur-md shadow-inner">
+                 <img src={brandInfo.logo} className="w-full h-full object-contain" alt="Logo" />
               </div>
               <h3 className="text-xl font-bold mb-1 tracking-tight">{brandInfo.name}</h3>
               <p className="text-[10px] uppercase tracking-widest text-white/60 mb-8">{brandInfo.tagline}</p>
@@ -627,7 +627,7 @@ END:VCARD`;
                   <h3 className="text-xl font-bold text-[#0A0A0A]">Showcase</h3>
                   <p className="text-xs text-[#2563EB] font-bold">{brandInfo.name}</p>
                </div>
-               <div className="w-10 h-10 bg-white rounded-full shadow-sm border border-neutral-100 flex items-center justify-center p-2">
+               <div className="w-10 h-10 bg-[#0A0A0A] rounded-full shadow-sm border border-neutral-100 flex items-center justify-center p-2">
                   <img src={brandInfo.logo} className="w-full h-full object-contain" alt="Logo" />
                </div>
             </div>
@@ -674,8 +674,8 @@ END:VCARD`;
             {/* Elegant Background */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
             
-            <div className="w-16 h-16 bg-white rounded-lg p-2 mb-12 shadow-2xl">
-               <img src={brandInfo.logo} className="w-full h-full object-contain filter grayscale" alt="Logo" />
+            <div className="w-16 h-16 bg-[#0A0A0A] rounded-lg p-2 mb-12 shadow-2xl">
+               <img src={brandInfo.logo} className="w-full h-full object-contain" alt="Logo" />
             </div>
             
             <h2 className="text-2xl font-serif text-white mb-2 tracking-tight">Prinkesh<br/>Devi.</h2>
@@ -761,7 +761,7 @@ END:VCARD`;
         {/* Mockup Container */}
         <div className="flex justify-center mb-24 relative">
           <motion.div 
-            className="w-[320px] aspect-[9/19] bg-neutral-900 rounded-[3.5rem] p-3 shadow-2xl border border-white/10 relative z-10"
+            className="w-[320px] aspect-[9/19] bg-white rounded-[3.5rem] p-3 shadow-2xl border border-white/10 relative z-10"
             initial={{ y: 0 }}
             animate={{ y: [-10, 10, -10] }}
             transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
@@ -771,7 +771,7 @@ END:VCARD`;
             <div className="w-full h-full bg-white rounded-[2.75rem] overflow-hidden relative flex flex-col isolate shadow-inner">
                {/* Notch */}
                <div className="absolute top-0 inset-x-0 h-7 flex justify-center z-50">
-                  <div className="w-32 h-6 bg-neutral-900 rounded-b-[1rem]"></div>
+                  <div className="w-32 h-6 bg-white rounded-b-[1rem]"></div>
                </div>
                
                {renderContent()}

@@ -82,11 +82,11 @@ END:VCARD`;
             
             <div className="relative z-10 flex flex-col items-center text-center">
               <div className="flex justify-between items-start w-full mb-6">
-                 <div className="w-24 h-24 rounded-2xl bg-neutral-100 overflow-hidden border-2 border-white shadow-sm mx-auto relative group-hover:scale-105 transition-transform duration-500">
+                 <div className="w-24 h-24 rounded-2xl bg-neutral-900 overflow-hidden border-2 border-white shadow-sm mx-auto relative group-hover:scale-105 transition-transform duration-500">
                    <img 
                      src={logo}
                      alt="Prinkesh Devi" 
-                     className="w-full h-full object-cover"
+                     className="w-full h-full object-contain"
                    />
                  </div>
               </div>
@@ -150,7 +150,7 @@ END:VCARD`;
             >
               <button 
                 onClick={() => setShowShare(false)}
-                className="absolute top-6 right-6 w-8 h-8 bg-neutral-100 rounded-full flex items-center justify-center text-neutral-500 hover:bg-neutral-200 transition-colors"
+                className="absolute top-6 right-6 w-8 h-8 bg-neutral-900 rounded-full flex items-center justify-center text-neutral-500 hover:bg-neutral-200 transition-colors"
               >
                 <X className="w-4 h-4" />
               </button>

@@ -6,8 +6,8 @@ export function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
         <div className="md:col-span-1">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-xl overflow-hidden flex items-center justify-center shadow-sm bg-white border border-neutral-100">
-               <img src={logo} alt="OneLynk Logo" className="w-full h-full object-cover" />
+            <div className="w-10 h-10 rounded-xl overflow-hidden flex items-center justify-center shadow-sm bg-neutral-900 border border-neutral-100">
+               <img src={logo} alt="OneLynk Logo" className="w-full h-full object-contain" />
             </div>
             <div>
               <h1 className="text-xl font-bold tracking-tight uppercase leading-none text-[#0A0A0A]">OneLynk</h1>
