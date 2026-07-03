@@ -21,13 +21,6 @@ export default function App() {
             <span className="text-[10px] tracking-[0.2em] text-[#64748B] font-semibold uppercase">Connect • Grow • Succeed.</span>
           </div>
         </div>
-        <div className="hidden sm:flex gap-8 items-center">
-          <span className="text-sm font-medium text-[#64748B] cursor-pointer hover:text-[#2563EB] transition-colors">The Studio</span>
-          <span className="text-sm font-medium text-[#64748B] cursor-pointer hover:text-[#2563EB] transition-colors">Portfolio</span>
-          <button className="px-5 py-2.5 bg-[#2563EB] text-white text-sm font-semibold rounded-full shadow-lg shadow-blue-500/20 active:scale-95 transition-transform">
-            Book Consultation
-          </button>
-        </div>
       </header>
 
       <main>
